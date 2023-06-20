@@ -1120,7 +1120,7 @@
 		&.style2 {
 			@include dark(#333);
 			background-attachment:	fixed,							fixed;
-			background-image:		url('images/overlay1.png'),		url('../../images/header.jpg');
+			background-image:		url('images/overlay1.png'),		url('../images/header.jpg');
 			background-size:		auto,							cover;
 		}
 	}
@@ -1176,6 +1176,7 @@
 			opacity: 1;
 			position: relative;
 			z-index: 1;
+			text-align: center;
 
 			.actions {
 				@include vendor('transition', 'transform 1.25s ease');
@@ -1331,6 +1332,11 @@
 				background-attachment: scroll;
 			}
 
+		/* Custom */
+		#title-animation {
+			height: 96px;
+			width: 148px;
+		}
 	}
 
 /* Medium */
@@ -1382,7 +1388,11 @@
 			#two {
 				text-align: center;
 			}
-
+		/* Custom */
+		#title-animation {
+			height: 84px;
+			width: 128px;
+		}
 	}
 
 /* Small */
@@ -1471,6 +1481,12 @@
 			#footer {
 				@include padding(3em, 1.5em, (0,0,_size(element-margin),0));
 			}
+
+		/* Custom */
+		#title-animation {
+			height: 60px;
+			width: 92px;
+		}
 
 	}
 

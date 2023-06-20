@@ -20,11 +20,11 @@
     });
 
     // Play initial animations on page load.
-    $window.on('load', function () {
+    // $window.on('load', function () {
         window.setTimeout(function () {
             $body.removeClass('is-preload');
         }, 100);
-    });
+    // });
 
     // Scrolly.
     $('.scrolly').scrolly();
@@ -65,6 +65,14 @@
             $("#fun-fact-select").attr("disabled", false).removeClass("disabled")
         }, 5000)
     
+    })
+
+    const animationElement = document.getElementById('title-animation');
+
+    $(animationElement).bind("click", function() {
+        animationElement.pause();
+        animationElement.seek(0);
+        animationElement.play();
     })
     //
     // let projectShow = function () {

@@ -152,6 +152,13 @@
   width: 400px;
 }
 
+#title-animation {
+  cursor: pointer;
+  height: 96px;
+  width: 148px;
+  margin: 0 auto;
+}
+
 /*
 	Photon by HTML5 UP
 	html5up.net | @ajlkn
@@ -2442,7 +2449,7 @@ button:disabled,
   background-color: #333;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed, fixed;
-  background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+  background-image: url("images/overlay1.png"), url("../images/header.jpg");
   background-size: auto, cover;
 }
 .main.style2 a {
@@ -2636,6 +2643,7 @@ button:disabled,
   opacity: 1;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 #header .inner .actions {
   -moz-transition: -moz-transform 1.25s ease;
@@ -2834,6 +2842,11 @@ body.is-preload #header:after {
     padding: 4em 0 4em 0;
     background-attachment: scroll;
   }
+  /* Custom */
+  #title-animation {
+    height: 96px;
+    width: 148px;
+  }
 }
 /* Medium */
 @media screen and (max-width: 980px) {
@@ -2865,6 +2878,11 @@ body.is-preload #header:after {
   /* Two */
   #two {
     text-align: center;
+  }
+  /* Custom */
+  #title-animation {
+    height: 84px;
+    width: 128px;
   }
 }
 /* Small */
@@ -2924,6 +2942,11 @@ button,
   /* Footer */
   #footer {
     padding: 3em 1.5em 3em 1.5em;
+  }
+  /* Custom */
+  #title-animation {
+    height: 60px;
+    width: 92px;
   }
 }
 /* XSmall */
