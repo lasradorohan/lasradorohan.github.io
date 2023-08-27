@@ -159,6 +159,18 @@
   margin: 0 auto;
 }
 
+.image-loading {
+  background-size: cover;
+  background-position: center;
+}
+.image-loading > img {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+.image-loading.image-loaded > img {
+  opacity: 1;
+}
+
 /*
 	Photon by HTML5 UP
 	html5up.net | @ajlkn

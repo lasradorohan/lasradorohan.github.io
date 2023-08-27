@@ -186,3 +186,17 @@
   width: 148px;
   margin: 0 auto;
 }
+
+.image-loading {
+  background-size: cover;
+  background-position: center;
+
+  > img {
+    opacity: 0;
+    transition: 200ms ease-in-out;
+  }
+
+  &.image-loaded > img {
+    opacity: 1;
+  }
+}
