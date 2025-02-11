@@ -2,7 +2,7 @@
 import "../styles/main.scss"
 const jqueryCDN = "https://code.jquery.com/jquery-3.6.4.min.js";
 const jqueryJS = "/scripts/jquery.min.js";
-const scrollyJS = "/scripts/jquery.scrolly.min.js";
+// const scrollyJS = "/scripts/jquery.scrolly.min.js";
 const browserJS = "/scripts/browser.min.js";
 const breakpointsJS = "/scripts/breakpoints.min.js";
 const mainJS = "/scripts/main.js";
@@ -32,7 +32,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
         <h4>Machine Learning & Computer Vision enthusiast<br>
             Enjoy creating Android Apps.</h4>
         <ul class="actions special">
-            <li><a href="#one" class="button scrolly">Discover</a></li>
+            <li><a scroll-target="one" class="button scrolly">Discover</a></li>
         </ul>
     </div>
 </section>
@@ -130,7 +130,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
         </header>
         <div class="row gtr-150">
             <div class="col-3 col-6-medium r-nav-tile">
-                <a href="#r-nav-content" target="1" class="scrolly r-nav-select image-text fit">
+                <a scroll-target="r-nav-content" target="1" class="scrolly r-nav-select image-text fit">
                     <img src="/images/skills_sections/academic_achievements_small.jpg"
                          alt=""/>
                     <h3>Education &amp; Academic achievements</h3>
@@ -138,7 +138,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
                 <p>My achievements.</p>
             </div>
             <div class="col-3 col-6-medium r-nav-tile">
-                <a href="#r-nav-content" target="2" class="scrolly r-nav-select image-text fit">
+                <a scroll-target="r-nav-content" target="2" class="scrolly r-nav-select image-text fit">
                     <img src="/images/skills_sections/technical_skills_small.jpg"
                          alt=""/>
                     <h3>Technical Skills</h3>
@@ -146,7 +146,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
                 <p>Frameworks, Technologies and Proramming Languages.</p>
             </div>
             <div class="col-3 col-6-medium r-nav-tile">
-                <a href="#r-nav-content" target="3" class="scrolly r-nav-select image-text fit selected">
+                <a scroll-target="r-nav-content" target="3" class="scrolly r-nav-select image-text fit selected">
                     <img src="/images/skills_sections/courses_specializations_small.jpg"
                          alt=""/>
                     <h3>Specializations and Certifications</h3>
@@ -154,7 +154,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
                 <p>Includes certifications from Coursera, NPTEL, Udemy and Udacity.</p>
             </div>
             <div class="col-3 col-6-medium r-nav-tile">
-                <a href="#r-nav-content" target="4" class="scrolly r-nav-select image-text fit">
+                <a scroll-target="r-nav-content" target="4" class="scrolly r-nav-select image-text fit">
                     <img src="/images/skills_sections/projects_experience_small.jpg"
                          alt=""/>
                     <h3>Work Experience and Projects</h3>
@@ -776,7 +776,7 @@ Intelligence, Machine Learning, and Deep Learning</a></span>
 
 <!-- Scripts -->
 <script is:inline src={jqueryJS} defer/>
-<script is:inline src={scrollyJS} defer/>
+<!--<script is:inline src={scrollyJS} defer/>-->
 <script is:inline src={breakpointsJS} defer/>
 <script is:inline src={browserJS} defer/>
 <script is:inline src={lottieJS} defer/>
